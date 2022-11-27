@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Sora;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 20px;
+    min-width: 250px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.aling {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.groupButons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50 0;
+}
+
+button {
+    cursor: pointer;
+    background-color: #042940;
+    border: 2px solid #042940;
+    color: #fff;
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+    transition: 1s all;
+}
+
+button:hover {
+    font-weight: 700;
+    background-color: white;
+    color: #042940;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "nome nome endereco"
+        "he hs endereco"
+        "ds ds ds";
+}
+
+#nome {
+    grid-area: nome;
+    grid-column: 1 /3;
+}
+
+#endereco {
+    grid-area: endereco;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100%;
+}
+
+#ds {
+    grid-area: ds;
+}
+
+#he {
+    grid-area: he;
+}
+
+#hs {
+    grid-area: hs;
+}
