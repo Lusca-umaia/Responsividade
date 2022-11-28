@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Sora;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgba(161, 176, 189, 0.219);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 20px 0;
+    flex-direction: column;
+    background-color: yellow;
+}
+
+nav>.inputt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 30%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.lista {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+li {
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.3vw;
+    transition: 0.7s all;
+}
+li:hover {
+    opacity: 0.7;
+}
+
+.beneficios {
+    display: flex;
+    width: 80%;
+    height: 15vh;
+    margin: 50px auto;
+    border-radius: 20px;
+    align-items: center;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.agroup {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+}
+
+article>h2 {
+    font-size: 1.3vw;
+}
+
+article>p {
+    font-size: 1.0vw;
+}
+
+.cellGroupOne {
+    width: 100%;
+    margin: 40px 0;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    display: grid;
+    gap: 20px;
+}
+
+.cellGroupTwo {
+    width: 100%;
+    margin: 40px 0;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    display: grid;
+    gap: 20px;
+}
+
+.cellGroupThree {
+    width: 100%;
+    margin: 40px 0;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+    gap: 20px;
+}
+
+.cellItem {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.7s all;
+}
+
+.cellItem:hover {
+    transform: scale(1.1);
+}
+
+.cellItem>img {
+    width: 10vw;
+}
+
+.slec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#selectt {
+    width: 100px;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+@media (max-width: 500px) {
+    .slec {
+        margin-top: 50px;
+    }
+    .beneficios {
+        display: none;
+    }
+}
